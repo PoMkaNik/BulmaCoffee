@@ -31,3 +31,18 @@ tabs.forEach((tab) => {
     });
   });
 });
+
+// modal functionality
+const signUpBtn = document.getElementById('js--signup-btn');
+const modalBackground = document.querySelector('.modal-background');
+const modalWindow = document.querySelector('.modal');
+
+signUpBtn.addEventListener('click', () => {
+  // add is-active class to modal window to show it
+  modalWindow.classList.add('is-active');
+});
+
+// add event listener on modal background to close it on click
+modalBackground.addEventListener('click', () => {
+  modalWindow.classList.remove('is-active');
+});
