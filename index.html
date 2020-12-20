@@ -113,10 +113,10 @@
             <div class="tabs is-boxed">
               <ul>
                 <li class="is-active" data-target="js--product-details">
-                  <a href="#">Product Details</a>
+                  <a>Product Details</a>
                 </li>
                 <li data-target="js--delivery-info">
-                  <a href="#">Delivery Information</a>
+                  <a>Delivery Information</a>
                 </li>
               </ul>
             </div>
@@ -233,11 +233,24 @@
     </section>
     <!-- != related products -->
 
+    <!-- footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Copyright 2020 &copy; Bulma Coffee</p>
+      </div>
+    </footer>
+    <!-- != footer -->
+
     <!-- modal window -->
     <div class="modal">
       <div class="modal-background"></div>
       <div class="modal-content has-background-white py-5 px-5">
-        <h3 class="title mb-6">join the Club</h3>
+        <h3
+          class="title mb-6 is-flex is-align-items-center is-justify-content-space-between"
+        >
+          Join the Club
+          <a class="delete" id="js--modal-close-btn"></a>
+        </h3>
         <!-- form -->
         <form>
           <div class="field">

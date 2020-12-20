@@ -36,6 +36,7 @@ tabs.forEach((tab) => {
 const signUpBtn = document.getElementById('js--signup-btn');
 const modalBackground = document.querySelector('.modal-background');
 const modalWindow = document.querySelector('.modal');
+const modalCloseBtn = document.getElementById('js--modal-close-btn');
 
 signUpBtn.addEventListener('click', () => {
   // add is-active class to modal window to show it
@@ -44,5 +45,10 @@ signUpBtn.addEventListener('click', () => {
 
 // add event listener on modal background to close it on click
 modalBackground.addEventListener('click', () => {
+  modalWindow.classList.remove('is-active');
+});
+
+// add event listener on modal close btn to close it on click
+modalCloseBtn.addEventListener('click', () => {
   modalWindow.classList.remove('is-active');
 });
