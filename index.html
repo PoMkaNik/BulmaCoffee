@@ -11,9 +11,10 @@
     <title>Bulma Coffee</title>
   </head>
   <body>
+    <!-- top navbar -->
     <nav class="navbar has-shadow is-white">
       <!-- logo -->
-      <div class="navbar-brand">
+      <div class="navbar-brand is-align-items-center">
         <a href="#" class="navbar-item">
           <img
             src="img/logo.png"
@@ -23,7 +24,7 @@
           />
         </a>
         <!-- mobile nav icon -->
-        <a href="#" class="navbar-burger">
+        <a href="#" class="navbar-burger" id="js--burger">
           <span></span>
           <span></span>
           <span></span>
@@ -32,7 +33,7 @@
       </div>
       <!-- != logo -->
       <!-- navbar menu -->
-      <div class="navbar-menu" id="nav-links">
+      <div class="navbar-menu" id="js--nav-links">
         <div class="navbar-end">
           <a href="#" class="navbar-item">My account</a>
           <a href="#" class="navbar-item">Shopping Cart (0)</a>
@@ -40,5 +41,20 @@
       </div>
       <!-- != navbar menu -->
     </nav>
+    <!-- != top navbar -->
+    <!-- breadcrumbs -->
+    <div class="section pt-4 pb-0">
+      <nav class="breadcrumb">
+        <ul>
+          <li><a href="#">Bulma Coffee</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Docker Dark Roast</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- != breadcrumbs -->
+
+    <!-- custom js -->
+    <script src="js/main.js"></script>
   </body>
 </html>
